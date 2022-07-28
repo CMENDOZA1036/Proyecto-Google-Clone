@@ -165,3 +165,67 @@ main {
     height: 3.2rem;
     cursor: pointer;
 }
+
+
+/*! Vamos Estilizar los Botones!*/
+
+.main-buttons {
+    width: 53rem;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+main .main-buttons button {
+    height: 3.6rem;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 1.5rem;
+    margin-right: 1.5rem;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1 px #000001; /** Con este damos una combra en el Hover**/
+    cursor: pointer;
+    color: #222;
+}
+
+/*!Comenzamos a Estilizar la etiqueta Footer!*/
+
+footer {
+    width: 100%;
+    height: 5rem;
+    position: absolute;/**Con esto hacemos que se quede siempre en la parte de Abajo el contenedor padre**/
+    background-color: #f2f2f2;
+    bottom: 0; /**Con esta propiedad tiramos el Footer a la parte de abajo.**/
+    display: grid;/**Con Display grid podemos poner contendedores dividos en cuadros, osea en dos contenderos, con la propiedad siguiente**/
+    grid-template-columns: 1fr 1fr;/**Equivale a dos fracciones 1fr 1fr**/
+    align-items: center;
+    font-size: 1.3rem;
+    border-top: 1px solid #e4e4e4;/**Con este ponemos un borde en la parte superior mas oscuro**/
+}
+
+footer ul {
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    justify-self: left;/**Con esto le estamos diciendo que todo el contenido se valla a la izquierda**/
+}
+
+footer .footer-right {
+    justify-self: right;/**Con esto le estamos diciendo que todo el contenido se valla a la derecha**/
+}
+
+footer ul li a {
+    margin: 1rem;
+    color: #5f6368;
+}
